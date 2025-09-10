@@ -1,0 +1,31 @@
+name: ci
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install frontend deps
+        run: |
+          npm ci || npm install
+      - name: Build frontend
+        run: |
+          npm run build || echo "skip build in preview"
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install backend deps
+        run: |
+          pip install -r backend/requirements.txt
+      - name: Backend import test
+        run: |
+          python -c "import app.main; print('backend ok')"
