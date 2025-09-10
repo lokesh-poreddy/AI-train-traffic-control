@@ -2,9 +2,6 @@
 
 Security-first AI decision-support prototype to optimize section throughput and train precedence using demo-safe simulated data, human-in-the-loop controls, audit logging, and deploy-ready stacks (Next.js frontend + FastAPI backend).
 
-Demo Mode: This instance uses simulated train data only. No live signalling/infrastructure is accessed. Critical actions require Supervisor sign-off.
-
-![Dashboard View](./public/screenshots/dashboard.png)
 
 ## System Architecture
 
@@ -12,17 +9,7 @@ Demo Mode: This instance uses simulated train data only. No live signalling/infr
 
 The system follows a modern microservices architecture with clear separation of concerns:
 
-## Quick Start (Local)
-
-Requirements: Docker + Docker Compose
-
-1) Start stack:
-- docker-compose up --build
-
-2) Open UI:
-- http://localhost:3000
-
-3) What to try:
+What to try:
 - Dashboard shows KPIs, live map, and audit activity.
 - Click "Run Optimize" to generate a recommendation.
 - Go to Controller Panel (/controller-panel) to Accept or Request Supervisor.
