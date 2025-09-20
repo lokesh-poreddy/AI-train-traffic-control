@@ -422,8 +422,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Wiki](https://github.com/lokesh-poreddy/AI-train-traffic-control/wiki)
 
 ### Contact
-- **Author**: Lokesh Poreddy
-- **Email**: lokesh.poreddy@example.com
+- **Author**: Lokesh Reddy Poreddy
+- **Email**: p.krishnalokeshreddy@gmail.com
 - **GitHub**: [@lokesh-poreddy](https://github.com/lokesh-poreddy)
 - **Project**: AI Train Traffic Control Prototype
 - **Repository**: [https://github.com/lokesh-poreddy/AI-train-traffic-control](https://github.com/lokesh-poreddy/AI-train-traffic-control)
