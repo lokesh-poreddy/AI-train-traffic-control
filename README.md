@@ -320,17 +320,6 @@ REDIS_URL=redis://localhost:6379
 
 ## 🚀 Deployment
 
-### Production Deployment
-
-#### Frontend (Vercel)
-```bash
-# Deploy to Vercel
-vercel --prod
-
-# Update environment variables
-vercel env add NEXT_PUBLIC_BACKEND_URL production
-vercel env add NEXT_PUBLIC_BACKEND_WS production
-```
 
 #### Backend (Container Host)
 ```bash
